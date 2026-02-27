@@ -6,9 +6,10 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   base: "/",
-  site: "https://codeforreal.com",
+  site: "https://compresso.codeforreal.com",
   integrations: [mdx(), sitemap()],
   output: "static",
+  outDir: "../dist",
   vite: {
     plugins: [tailwindcss()],
     build: {
@@ -17,7 +18,7 @@ export default defineConfig({
       },
     },
   },
-   markdown: {
+  markdown: {
     shikiConfig: {
       theme: 'catppuccin-mocha',
 
